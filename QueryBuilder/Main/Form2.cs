@@ -69,7 +69,8 @@ namespace QueryBuilder.Main
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
         }
     }
 }

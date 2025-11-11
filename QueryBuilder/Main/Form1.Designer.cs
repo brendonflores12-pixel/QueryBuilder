@@ -31,18 +31,23 @@
             btnExit = new Button();
             dgvAccounts = new DataGridView();
             pnlCount = new Panel();
+            label6 = new Label();
             valCount = new Label();
             lblCount = new Label();
             pnlMax = new Panel();
+            label4 = new Label();
             valMax = new Label();
             lblMax = new Label();
             pnlMin = new Panel();
+            label2 = new Label();
             valMin = new Label();
             lblMin = new Label();
             pnlAvg = new Panel();
+            label3 = new Label();
             valAvg = new Label();
             lblAvg = new Label();
             pnlSum = new Panel();
+            label5 = new Label();
             valSum = new Label();
             lblSum = new Label();
             btnAdd = new Button();
@@ -73,7 +78,8 @@
             dgvAccounts.AllowUserToResizeColumns = false;
             dgvAccounts.AllowUserToResizeRows = false;
             dgvAccounts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvAccounts.BackgroundColor = Color.White;
+            dgvAccounts.BackgroundColor = SystemColors.ActiveCaption;
+            dgvAccounts.BorderStyle = BorderStyle.None;
             dgvAccounts.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable;
             dgvAccounts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvAccounts.Location = new Point(95, 307);
@@ -89,6 +95,7 @@
             // pnlCount
             // 
             pnlCount.BackColor = Color.LightSteelBlue;
+            pnlCount.Controls.Add(label6);
             pnlCount.Controls.Add(valCount);
             pnlCount.Controls.Add(lblCount);
             pnlCount.Location = new Point(97, 182);
@@ -96,13 +103,23 @@
             pnlCount.Size = new Size(200, 102);
             pnlCount.TabIndex = 3;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(33, 42);
+            label6.Name = "label6";
+            label6.Size = new Size(55, 38);
+            label6.TabIndex = 2;
+            label6.Text = "\U0001f9d1‍💼";
+            // 
             // valCount
             // 
             valCount.AutoSize = true;
-            valCount.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold);
-            valCount.Location = new Point(77, 39);
+            valCount.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            valCount.Location = new Point(79, 39);
             valCount.Name = "valCount";
-            valCount.Size = new Size(40, 46);
+            valCount.Size = new Size(39, 46);
             valCount.TabIndex = 1;
             valCount.Text = "0";
             // 
@@ -119,6 +136,7 @@
             // pnlMax
             // 
             pnlMax.BackColor = Color.LightGreen;
+            pnlMax.Controls.Add(label4);
             pnlMax.Controls.Add(valMax);
             pnlMax.Controls.Add(lblMax);
             pnlMax.Location = new Point(516, 182);
@@ -126,13 +144,24 @@
             pnlMax.Size = new Size(207, 102);
             pnlMax.TabIndex = 4;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(1, 35);
+            label4.Name = "label4";
+            label4.Size = new Size(39, 46);
+            label4.TabIndex = 3;
+            label4.Text = "$";
+            // 
             // valMax
             // 
             valMax.AutoSize = true;
-            valMax.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold);
-            valMax.Location = new Point(3, 38);
+            valMax.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold);
+            valMax.Location = new Point(31, 35);
             valMax.Name = "valMax";
-            valMax.Size = new Size(40, 46);
+            valMax.Size = new Size(39, 46);
             valMax.TabIndex = 1;
             valMax.Text = "0";
             valMax.TextAlign = ContentAlignment.MiddleCenter;
@@ -150,6 +179,7 @@
             // pnlMin
             // 
             pnlMin.BackColor = Color.LightCoral;
+            pnlMin.Controls.Add(label2);
             pnlMin.Controls.Add(valMin);
             pnlMin.Controls.Add(lblMin);
             pnlMin.Location = new Point(729, 182);
@@ -157,15 +187,28 @@
             pnlMin.Size = new Size(207, 102);
             pnlMin.TabIndex = 5;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(1, 35);
+            label2.Name = "label2";
+            label2.Size = new Size(39, 46);
+            label2.TabIndex = 2;
+            label2.Text = "$";
+            // 
             // valMin
             // 
             valMin.AutoSize = true;
-            valMin.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold);
-            valMin.Location = new Point(3, 39);
+            valMin.BackColor = Color.Transparent;
+            valMin.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            valMin.Location = new Point(31, 35);
             valMin.Name = "valMin";
-            valMin.Size = new Size(40, 46);
+            valMin.Size = new Size(39, 46);
             valMin.TabIndex = 1;
             valMin.Text = "0";
+            valMin.Click += valMin_Click;
             // 
             // lblMin
             // 
@@ -180,6 +223,7 @@
             // pnlAvg
             // 
             pnlAvg.BackColor = Color.Khaki;
+            pnlAvg.Controls.Add(label3);
             pnlAvg.Controls.Add(valAvg);
             pnlAvg.Controls.Add(lblAvg);
             pnlAvg.Location = new Point(942, 182);
@@ -187,13 +231,24 @@
             pnlAvg.Size = new Size(200, 102);
             pnlAvg.TabIndex = 4;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(1, 35);
+            label3.Name = "label3";
+            label3.Size = new Size(39, 46);
+            label3.TabIndex = 3;
+            label3.Text = "$";
+            // 
             // valAvg
             // 
             valAvg.AutoSize = true;
-            valAvg.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold);
-            valAvg.Location = new Point(3, 39);
+            valAvg.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold);
+            valAvg.Location = new Point(31, 35);
             valAvg.Name = "valAvg";
-            valAvg.Size = new Size(40, 46);
+            valAvg.Size = new Size(39, 46);
             valAvg.TabIndex = 1;
             valAvg.Text = "0";
             // 
@@ -210,6 +265,7 @@
             // pnlSum
             // 
             pnlSum.BackColor = Color.LightSkyBlue;
+            pnlSum.Controls.Add(label5);
             pnlSum.Controls.Add(valSum);
             pnlSum.Controls.Add(lblSum);
             pnlSum.Location = new Point(303, 182);
@@ -217,13 +273,24 @@
             pnlSum.Size = new Size(207, 102);
             pnlSum.TabIndex = 4;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(1, 36);
+            label5.Name = "label5";
+            label5.Size = new Size(39, 46);
+            label5.TabIndex = 3;
+            label5.Text = "$";
+            // 
             // valSum
             // 
             valSum.AutoSize = true;
-            valSum.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold);
-            valSum.Location = new Point(3, 39);
+            valSum.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold);
+            valSum.Location = new Point(31, 36);
             valSum.Name = "valSum";
-            valSum.Size = new Size(40, 46);
+            valSum.Size = new Size(39, 46);
             valSum.TabIndex = 1;
             valSum.Text = "0";
             // 
@@ -240,12 +307,12 @@
             // btnAdd
             // 
             btnAdd.BackColor = Color.FromArgb(192, 255, 192);
-            btnAdd.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            btnAdd.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAdd.Location = new Point(97, 684);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(1047, 76);
             btnAdd.TabIndex = 6;
-            btnAdd.Text = "➕ Add ";
+            btnAdd.Text = "Add ";
             btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 
@@ -253,6 +320,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Maiandra GD", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DarkGreen;
             label1.Location = new Point(249, 59);
             label1.Name = "label1";
             label1.Size = new Size(736, 56);
@@ -313,5 +381,10 @@
         private Label lblSum;
         private Button btnAdd;
         private Label label1;
+        private Label label2;
+        private Label label4;
+        private Label label3;
+        private Label label5;
+        private Label label6;
     }
 }

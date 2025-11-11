@@ -48,7 +48,11 @@ namespace QueryBuilder.Main
                .Value("Status", cmbStatus.Text)
                .Get();
 
-            MessageBox.Show("Account added successfully!");
+            MessageBox.Show("Account added successfully!",
+                "Success!",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+                );
             this.Close();
         }
 
@@ -63,7 +67,11 @@ namespace QueryBuilder.Main
                 .Where("Account ID", recordId)
                 .Get();
 
-            MessageBox.Show("Account updated successfully!");
+            MessageBox.Show("Account updated successfully!",
+                "Success!",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+                );
             this.Close();
         }
 

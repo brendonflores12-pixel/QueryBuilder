@@ -46,49 +46,49 @@
             lblAccNo.AutoSize = true;
             lblAccNo.BackColor = Color.Transparent;
             lblAccNo.Font = new Font("Segoe UI", 18F);
-            lblAccNo.Location = new Point(226, 74);
+            lblAccNo.Location = new Point(167, 67);
             lblAccNo.Name = "lblAccNo";
-            lblAccNo.Size = new Size(221, 41);
+            lblAccNo.Size = new Size(214, 41);
             lblAccNo.TabIndex = 0;
-            lblAccNo.Text = "Account Name:";
+            lblAccNo.Text = "Account Name";
             // 
             // lblPIN
             // 
             lblPIN.AutoSize = true;
             lblPIN.BackColor = Color.Transparent;
             lblPIN.Font = new Font("Segoe UI", 18F);
-            lblPIN.Location = new Point(299, 186);
+            lblPIN.Location = new Point(240, 179);
             lblPIN.Name = "lblPIN";
-            lblPIN.Size = new Size(72, 41);
+            lblPIN.Size = new Size(65, 41);
             lblPIN.TabIndex = 1;
-            lblPIN.Text = "PIN:";
+            lblPIN.Text = "PIN";
             // 
             // lblBalance
             // 
             lblBalance.AutoSize = true;
             lblBalance.BackColor = Color.Transparent;
             lblBalance.Font = new Font("Segoe UI", 18F);
-            lblBalance.Location = new Point(238, 304);
+            lblBalance.Location = new Point(179, 297);
             lblBalance.Name = "lblBalance";
-            lblBalance.Size = new Size(197, 41);
+            lblBalance.Size = new Size(190, 41);
             lblBalance.TabIndex = 2;
-            lblBalance.Text = "Total Balance:";
+            lblBalance.Text = "Total Balance";
             // 
             // lblStatus
             // 
             lblStatus.AutoSize = true;
             lblStatus.BackColor = Color.Transparent;
             lblStatus.Font = new Font("Segoe UI", 18F);
-            lblStatus.Location = new Point(283, 413);
+            lblStatus.Location = new Point(224, 406);
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(105, 41);
+            lblStatus.Size = new Size(98, 41);
             lblStatus.TabIndex = 3;
-            lblStatus.Text = "Status:";
+            lblStatus.Text = "Status";
             // 
             // txtAccNo
             // 
             txtAccNo.Font = new Font("Segoe UI", 16.2F);
-            txtAccNo.Location = new Point(115, 128);
+            txtAccNo.Location = new Point(56, 121);
             txtAccNo.Name = "txtAccNo";
             txtAccNo.Size = new Size(430, 43);
             txtAccNo.TabIndex = 4;
@@ -96,7 +96,7 @@
             // txtPIN
             // 
             txtPIN.Font = new Font("Segoe UI", 16.2F);
-            txtPIN.Location = new Point(115, 239);
+            txtPIN.Location = new Point(56, 232);
             txtPIN.Name = "txtPIN";
             txtPIN.Size = new Size(430, 43);
             txtPIN.TabIndex = 5;
@@ -104,7 +104,7 @@
             // txtBalance
             // 
             txtBalance.Font = new Font("Segoe UI", 16.2F);
-            txtBalance.Location = new Point(115, 358);
+            txtBalance.Location = new Point(56, 351);
             txtBalance.Name = "txtBalance";
             txtBalance.Size = new Size(430, 43);
             txtBalance.TabIndex = 6;
@@ -112,24 +112,24 @@
             // btnAdd
             // 
             btnAdd.BackColor = Color.FromArgb(192, 255, 192);
-            btnAdd.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAdd.Location = new Point(238, 549);
+            btnAdd.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAdd.Location = new Point(56, 563);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(179, 77);
+            btnAdd.Size = new Size(162, 57);
             btnAdd.TabIndex = 9;
-            btnAdd.Text = "➕ Add ";
+            btnAdd.Text = " Add ";
             btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 
             // btnUpdate
             // 
             btnUpdate.BackColor = Color.FromArgb(255, 224, 192);
-            btnUpdate.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnUpdate.Location = new Point(238, 549);
+            btnUpdate.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnUpdate.Location = new Point(56, 563);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(179, 77);
+            btnUpdate.Size = new Size(162, 57);
             btnUpdate.TabIndex = 8;
-            btnUpdate.Text = "✏️Update";
+            btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
             btnUpdate.Click += btnUpdate_Click;
             // 
@@ -140,20 +140,22 @@
             cmbStatus.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbStatus.FormattingEnabled = true;
             cmbStatus.Items.AddRange(new object[] { "Active", "Inactive", "Suspended" });
-            cmbStatus.Location = new Point(115, 466);
+            cmbStatus.Location = new Point(56, 459);
             cmbStatus.Name = "cmbStatus";
             cmbStatus.Size = new Size(430, 45);
             cmbStatus.TabIndex = 10;
             // 
             // btnExit
             // 
-            btnExit.ForeColor = Color.Red;
-            btnExit.Location = new Point(623, 2);
+            btnExit.BackColor = Color.FromArgb(255, 192, 192);
+            btnExit.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.ForeColor = SystemColors.ActiveCaptionText;
+            btnExit.Location = new Point(324, 563);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(33, 33);
+            btnExit.Size = new Size(162, 59);
             btnExit.TabIndex = 11;
-            btnExit.Text = "❌";
-            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Text = "Cancel";
+            btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
             // 
             // Form2
@@ -161,9 +163,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnableAllowFocusChange;
-            BackColor = Color.LightSteelBlue;
+            BackColor = Color.LightBlue;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(658, 737);
+            ClientSize = new Size(544, 667);
             Controls.Add(btnExit);
             Controls.Add(cmbStatus);
             Controls.Add(btnAdd);

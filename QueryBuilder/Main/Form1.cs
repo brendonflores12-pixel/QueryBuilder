@@ -106,7 +106,7 @@ namespace QueryBuilder
             {
                 DialogResult confirm = MessageBox.Show(
                     "Are you sure you want to delete this row?",
-                    "Remove Row",
+                    "Delete Row",
                     MessageBoxButtons.YesNoCancel,
                     MessageBoxIcon.Warning
                 );
@@ -114,9 +114,19 @@ namespace QueryBuilder
                 if (confirm == DialogResult.Yes)
                 {
                     dgvAccounts.Rows.RemoveAt(e.RowIndex);
-                    MessageBox.Show("Deleted Successfuly.");
+                    MessageBox.Show(
+                    "Deleted Successfully!",
+                    "Success",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
                 }
             }
+        }
+
+        private void valMin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
